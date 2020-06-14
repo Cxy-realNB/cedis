@@ -10,7 +10,7 @@
     </parent>
     <groupId>per.cxy</groupId>
     <artifactId>cedis</artifactId>
-    <version>cedis-release 1.0-SNAPSHOT</version>
+    <version>release 1.0-SNAPSHOT</version>
     <name>cedis</name>
     <description>Redis management tool</description>
 
