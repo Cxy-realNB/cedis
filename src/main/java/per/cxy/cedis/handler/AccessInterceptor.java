@@ -24,7 +24,6 @@ public class AccessInterceptor  extends HandlerInterceptorAdapter {
             throws Exception {
         HttpSession httpSession = request.getSession(false);
         if (httpSession != null) {
-            request.changeSessionId();
             return true;
         }else {
             response.sendRedirect("/login");
@@ -35,7 +34,6 @@ public class AccessInterceptor  extends HandlerInterceptorAdapter {
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object arg2, ModelAndView arg3)
             throws Exception {
-
     }
 
     @Override
@@ -43,7 +41,6 @@ public class AccessInterceptor  extends HandlerInterceptorAdapter {
     }
 
     private String getCookieValue(HttpServletRequest request, HttpServletResponse response, String cookieName) {
-
         return null;
     }
 }
